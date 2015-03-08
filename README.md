@@ -2,8 +2,7 @@
 vbs script that watches a folder for new files and uploads them to put.io using curl.
 
 ##Requirements
-
-Curl is required for use. I downloaded curl for windows and placed the curl executable in C:/Windows/System32/.
+As this is a VBS file it requires Windows. Curl is required for use. I downloaded curl for windows and placed the curl executable in C:/Windows/System32/.
 
 ##Instructions for setup
 
