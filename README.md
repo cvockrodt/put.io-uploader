@@ -21,3 +21,9 @@ Set the path to your log file with the logfile variable.
 ##Run
 
 Double click the watch.vbs file to run. Check the log file to be sure it is working correctly. If you restart your computer, you need to run the vbs again. To kill the script, kill "Microsoft Windows Based Script Host" in the processes tab of Task Manager (CTRL-ALT-DEL)
+
+##Troubleshooting
+Try to send a file manually using the following curl command in the command line:
+curl -i -F file=@"D:\test\test.file" "https://upload.put.io/v2/files/upload?oauth_token=XXXXXX"
+
+Where D:\test\test.file is the file you want to upload and XXXXXX is your OAUTH token.
