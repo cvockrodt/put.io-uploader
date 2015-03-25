@@ -60,7 +60,7 @@ Sub upload()
 	curlcommand = "curl -i -F file=@""" & objTargetInst.Name & """ ""https://upload.put.io/v2/files/upload?oauth_token=" & oauth & """"
 
 	command = "cmd /C " & curlcommand & " >> " & logfile
-	echocommand = "cmd /C echo.;echo " & objTargetInst.Name & " uploaded >> " & logfile
+	echocommand = "cmd /C echo. & echo " & objTargetInst.Name & " uploaded >> " & logfile
 	WshShell.run command
 	WshShell.run echocommand
 End Sub
