@@ -8,7 +8,7 @@ As this is a VBS file it requires Windows. Curl is required for use. I downloade
 
 ### OAUTH Key
 
-Get an OAUTH key from put.io and put it in the top of the watch.vbs file where it has the line oauth = "" so that it reads oauth = "XXXXXX" where XXXXXX is your OAUTH key.
+Get an OAUTH key from put.io and put it in the top of the watch.vbs file where it has the line `oauth = ""` so that it reads `oauth = "XXXXXX"` where `XXXXXX` is your OAUTH key.
 
 ### Black Hole Folder
 
@@ -24,6 +24,8 @@ Double click the watch.vbs file to run. Check the log file to be sure it is work
 
 ## Troubleshooting
 Try to send a file manually using the following curl command in the command line:
+```bash
 curl -i -F file=@"D:\test\test.file" "https://upload.put.io/v2/files/upload?oauth_token=XXXXXX"
+```
 
 Where D:\test\test.file is the file you want to upload and XXXXXX is your OAUTH token.
